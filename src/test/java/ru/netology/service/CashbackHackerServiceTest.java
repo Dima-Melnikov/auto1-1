@@ -1,5 +1,6 @@
 package ru.netology.service;
 
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -14,17 +15,19 @@ public class CashbackHackerServiceTest {
         int actual = service.remain(amount);
         int expected = 100;
 
-        assertEquals(expected, actual);
+        Assertions Assert;
+        assertEquals(actual, expected);
     }
 
     @Test
     public void shouldReturnIfAmountGreaterThan1000() {
         CashbackHackerService service = new CashbackHackerService();
-        int amount = 1200;
+        int amount = 1100;
 
         int actual = service.remain(amount);
-        int expected = 800;
+        int expected = 900;
 
+        Assertions Assert;
         assertEquals(actual, expected);
     }
 
@@ -36,6 +39,8 @@ public class CashbackHackerServiceTest {
         int actual = service.remain(amount);
         int expected = 0;
 
+        Assertions Assert;
         assertEquals(actual, expected);
     }
+
 }
